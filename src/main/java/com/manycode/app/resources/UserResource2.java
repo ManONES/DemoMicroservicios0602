@@ -18,9 +18,9 @@ public class UserResource2 {
     @RequestMapping("/user/{userId}")
     public User2 getUserRatings(@PathVariable("userId") String userId) {
     	int iii = 0;      
-		for (int ii = 0; ii < 2; ii++) {
+		for (int ii = 0; ii < 100; ii++) {
 	        while (true) {
-			    iii =getRandomNumberInRange(1000, 2000);
+			    iii =getRandomNumberInRange(1, 2000);
 			    LOG.info("intento:" + iii);
 	            if (iii==1974) { break;}
 	        }
